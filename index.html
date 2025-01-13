@@ -156,8 +156,23 @@
               formId: '67801149c11264354e71dd10',
               containerEl: '#fd-form-67801149c11264354e71dd10',
             });
+window.addEventListener('load', function() {
+  // Example: Remove a div with a specific class or ID from the form
+  var unwantedDiv = document.querySelector('#fd-form-67801149c11264354e71dd10 .viral-footer');
+  
+  if (unwantedDiv) {
+    unwantedDiv.remove();
+  }
+  
+  // Or remove by ID
+  var unwantedDivById = document.getElementById('unwanted-div-id');
+  if (unwantedDivById) {
+    unwantedDivById.remove();
+  }
+});
           </script>
           <!--tpl {% endblock %} tpl-->
+	
         </div>
       </div>
     </div>
